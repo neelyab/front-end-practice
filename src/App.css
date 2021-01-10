@@ -1,0 +1,217 @@
+main, html {
+    height: 100%;
+    margin: 0;
+    line-height: 180%;
+    color: #000;
+}
+header {
+    background-color: white;
+    height: 50px;
+
+}
+.parallax1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(img/coffee.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    min-height: 400px;
+}
+
+.parallax2 {
+    background: url(img/cafe.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100%;
+    height: 500px;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+
+.parallax3 {
+    background: url(img/girl.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+}
+
+.parallax4 {
+    background: url(img/city.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+}
+
+.heading {
+    background-color: white;
+    text-align: center;
+    font-size: 2.8em;
+    padding: 0px 20px;
+    line-height: 1.5em;
+}
+
+.two-col {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.split-paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 40px;
+    background-color: #8C5E58;
+    color: #F7F5F3;
+    font-size: 1em;
+}
+.split-paragraph h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.split-paragraph p {
+    max-width: 500px;
+    margin: 0;
+}
+.work-together-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7F5F3;
+}
+
+.work-together-container .two-col {
+    margin-top: 50px;
+    padding: 30px 30px;
+}
+.work-together-container h2 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    z-index: 1;
+    font-size: 2.7em;
+}
+.work-together-image {
+    background: url(img/work.jpg);
+    min-height: 350px;
+    min-width: 325px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.work-together-button {
+    background: white;
+    position: absolute;
+    top: 95%;
+    right: 10%;
+    font-size: 2em;
+    padding: 10px 10px;
+
+}
+.work-together {
+    width: 50%;
+    min-width: 310px;
+    max-width: 400px;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #BA5C12;
+}
+.blog {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #8C5E58;
+}
+
+.read-blog {
+    max-height: 350px;
+    border-radius: 100%;
+}
+.blog button {
+    width: 150px;
+    padding: 10px 20px;
+    background: white;
+    border: 1px solid white;
+    box-shadow: 5px 5px #BA5C12;
+    font-size: 2em;
+    font-family: 'Bodoni Moda', serif;
+}
+.blog-details {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.instagram {
+    width: 90%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instagram-feed {
+    width: 100%;
+    max-width: 500px;
+}
+footer a {
+    text-decoration: none;
+    color: #666;
+    text-align: center;
+}
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F5F3;
+}
+.footer-links {
+    width: 50%;
+}
+
+@media only screen and (min-width: 980px){
+    .two-col {
+        max-width: 35%;
+        padding: 0 30px;
+    }
+    .work-together-container .two-col {
+        margin-top: 0;
+    }
+    .work-together-button {
+        right: 20%;
+    }
+    .work-together-container {
+        /* min-height: 600px; */
+        padding-bottom: 50px;
+    }
+    .work-together-container h2 {
+        top: 0px;
+    }
+    .instagram {
+        width: 50%;
+    }
+    .footer-links {
+        width: 35%;
+    }
+}
